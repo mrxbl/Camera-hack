@@ -87,7 +87,7 @@ try:
       git clone https://github.com/mrxbl/Camera-hack
       print("Kurulum Tamamlandı")
 
-    ulke = ulkeler[num-1]
+    ulke = ulkeler[secim-1]
     res = requests.get(
         f"http://www.insecam.org/en/bycountry/{ulke}", headers=headers
     )
