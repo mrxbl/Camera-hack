@@ -76,7 +76,7 @@ try:
                  "SY", "TZ", "UG", "UZ", "VC","BJ", ]
     headers = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
 
-    num = int(input("OPTIONS : "))
+    secim = int(input("Ülke Giriniz : "))
     if num not in range(1, 145+1):
         raise IndexError
 
