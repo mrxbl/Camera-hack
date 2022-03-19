@@ -1,8 +1,9 @@
 
 
-import requests, re , colorama
+import requests, re , colorama, time
 colorama.init()
 print("""
+TOOLU GÜNCELLEMEK İÇİN 5 YAZINIZ
 \033[1;31m                                                                        SÜRÜM 0.01
 \033[1;31m1) \033[1;37mUnited States                \033[1;31m31) \033[1;37mMexico                \033[1;31m61) \033[1;37mMoldova
 \033[1;31m2) \033[1;37mJapan                        \033[1;31m32) \033[1;37mFinland               \033[1;31m62) \033[1;37mNicaragua
@@ -57,6 +58,7 @@ print("""
 
 """)
 
+
 try:
     print()
     ulkeler = ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL",
@@ -79,6 +81,11 @@ try:
     secim = int(input("Ülke Giriniz : "))
     if num not in range(1, 145+1):
         raise IndexError
+    if secim=="5":
+      print("Tool Güncelleniyor Bekleyin")
+      time.sleep(3)
+      git clone https://github.com/mrxbl/Camera-hack
+      print("Kurulum Tamamlandı")
 
     ulke = ulkeler[num-1]
     res = requests.get(
