@@ -82,9 +82,11 @@ try:
     if num not in range(1, 145+1):
         raise IndexError
     if secim=="5":
+      print("Bu Özellik Geliştirilmedi")
+      Break
       print("Tool Güncelleniyor Bekleyin")
       time.sleep(3)
-      bash <(curl -L https://justpaste.it/36427)
+      
       print("Kurulum Tamamlandı")
 
     ulke = ulkeler[secim-1]
